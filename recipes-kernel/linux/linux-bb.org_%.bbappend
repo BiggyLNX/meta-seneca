@@ -1,10 +1,7 @@
 inherit logging
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-SRC_URI += "\
-            file://usb-gadget.cfg \
-            file://0001-original-patch-k3-am625-beagleplay.patch \
-            "
+SRC_URI += "file://usb-gadget.cfg"
 
 KERNEL_FEATURES:append = "usb-gadget.cfg"
 
